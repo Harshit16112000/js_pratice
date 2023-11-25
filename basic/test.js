@@ -47,3 +47,29 @@ undefined => NaN
 // For Boolean   0, "" -> False 
 
  
+// Primitive
+
+/*
+  7 types : String, NUmber, Boolean, null,undefined, Symbol, Reference
+
+*/
+
+// Reference type
+// Array, Objects, Functions
+// Type of Reference is Function , mostly object Function
+// Javascipt -> JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId)
+// False
+
+let myobj = {
+    name:"Harshit",
+    name: 22
+}
+
+const myfunction = function(){
+    console.log("Hello")
+}
