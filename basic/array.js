@@ -25,6 +25,7 @@ console.log(marvel);
 const hero = marvel.concat(dc)
 console.log(hero);
 
+// Spreading of each element
 const all_new_hero = [...marvel, ...dc]
 console.log(all_new_hero)
 
