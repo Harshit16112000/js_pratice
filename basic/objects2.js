@@ -6,7 +6,7 @@ const course = {
 
 //course.courseInstructor
 
-// Object distructure
+// Object de-structure
 const {courseInstructor: instructor} = course
 console.log(instructor);
 

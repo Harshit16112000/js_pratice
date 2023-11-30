@@ -43,3 +43,9 @@ let score2 = 100
 let score3 = 100;
 
 console.log(Array.of(score1,score2,score3))
+
+//return 5
+//const addTwo = (num1 , num2) => num1 + num2
+
+const addTwo = (num1 , num2) => (num1 + num2)
+console.log(addTwo(2,3));

@@ -56,6 +56,10 @@ console.log(addTwo3())
     console.log("DB connected");
 })();
 
+//IIFE -> Prevent the problem of global scope,
 
+//( () => {
+//    console.log("DB COnnected");
+//})()
 
 
