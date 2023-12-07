@@ -1,0 +1,112 @@
+<!DOCTYPE html>  
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+      .bg-black {
+        background-color: 212121;
+        color: #fff;
+      }
+
+
+    </style>
+</head>
+<body style>
+    <div ></div>
+    <h1 id = "title" class="heading"> DOM Learning <span
+      style="display: none;"> 
+      test test
+      
+    </span></h1>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <h2>Lorem ipsum dolor sit amet</h2>
+
+    
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <input type="password" name="" id="">
+
+    <ul>
+      <li class="list-item">one</li>
+      <li class="list-item">two</li>
+      <li class="list-item">Three</li>
+
+    </ul>
+</body>
+</html>
+
+
+<!--  DOM -> Document Object Module
+  Objet is head, body
+  Event -> Alert on CLick
+
+
+  //document.getElementById('title').setAttribute('class','text')
+  Overwrite class to text
+
+  // innerText -> text which deplay inside 
+  // textContent -> It shows every content
+  // innerHTML -> it shows entire html tag also
+
+
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.quertyselect('h1') -> It gives the first h1
+
+
+cont myul - document.querySelector('ul')
+myul.querySelector('li')
+
+
+for classes -> .
+For id -> #
+
+
+document.querySelector(input[type=password])
+
+
+document.querySelectorAll('li')
+const tempList = document.querySelectorAll('li')
+    > NodeList(3)  
+    -> It is not an array
+
+tempList.style.color = 'green'   //does not work
+tempList[0].style.color = 'green'
+tempList.forEach(function(li){  lt.style.backgroundcolor= 'green'})
+
+
+document.getElementByClassName('list-item')
+  ->  HTMLCollection
+
+const tempClassList = document.getElementByClassName('list-item')
+tempClassList.forEach(function(li){
+  console.log(li)
+})    // It doesnot have forEach
+
+Array.from(tempClassList)
+
+
+
+    Window
+      |
+    Document
+      |
+    HTML
+      /\
+    HEAD                   BODY
+    -title                  |
+        -textnode          Div  -> attribute    
+    -meta                  /\
+        -attribute       h1                  p 
+                        -attr                  -textnode
+                        - text node
+
+    To manipulate something in HTML is DOM
+    document.getElementbyId('firstHeading').innerHTML = "<h1>Chai and code</h1>"
+
+    documentgetElementById('title').className
+    documentgetElementById('title').id
+-->
+
+
