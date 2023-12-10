@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> COde</h1>
+    <button id ="stop"> Stop</button>
+</body>
+
+<script>
+    // First argument is handler
+    // It will execute only onces, when the page is loaded
+    
+    // setTimeout(function() 
+    // {
+    //     console.log("Harshit");
+    // }, 2000)  // It is part of WebAPI, not for an JS
+
+        const sayhi= function(){
+            console.log("Harshit");
+        }
+        // Reference is passed
+        
+        const changeText = function ()
+         {
+            document.querySelector('h1').innerHTML = "best JS Series"}
+        //setInterval(sayhi,2000);
+        const changeMe = setTimeout(changeText,2000);
+
+        // If I press STOP, before 2 second, then value sould not be change
+        // so we use the option of clearTimeout() method
+
+        
+        document.querySelector('#stop').addEventListener('click',
+        function(){
+            clearTimeout(changeMe)
+            console.log("STOPPED");
+        })
+
+
+
+
+
+</script>
+
+</html>
